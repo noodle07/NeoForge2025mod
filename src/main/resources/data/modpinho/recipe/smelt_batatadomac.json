@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "modpinho:batatadomac" },
+  "result": "modpinho:batatadomac_crispy",
+  "experience": 0.35,
+  "cookingtime": 200
+}

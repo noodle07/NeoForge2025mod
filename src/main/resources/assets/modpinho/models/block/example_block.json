@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "modpinho:models/textures/block/gold_block"
-  }
-}
