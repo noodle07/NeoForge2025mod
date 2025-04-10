@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": { "item": "modpinho:batatadomac" },
-  "result": "modpinho:batatadomac_crispy",
+  "ingredient": { "item": "minecraft:paper" },
+  "result": "modpinho:batatadomac",
   "experience": 0.35,
   "cookingtime": 200
 }

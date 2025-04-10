@@ -1,16 +1,18 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "food",
+  "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:potato"
-    },
-    {
-      "item": "minecraft:gold_nugget"
-    }
+    "minecraft:brown_mushroom",
+    "minecraft:bowl"
   ],
   "result": {
     "count": 1,
-    "id": "modpinho.batatadomac"
-  }
+    "id": "modpinho:batatadomac"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modpinho"
+    }
+  ]
 }
