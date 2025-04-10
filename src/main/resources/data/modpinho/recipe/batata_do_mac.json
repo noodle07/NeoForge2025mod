@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "category": "food",
   "ingredients": [
-    "minecraft:brown_mushroom",
-    "minecraft:bowl"
+    "minecraft:potato",
+    "minecraft:paper"
   ],
   "result": {
     "count": 1,
