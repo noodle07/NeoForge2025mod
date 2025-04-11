@@ -63,7 +63,8 @@ public class TutorialMod
             event.accept(ModItemExample.BATATADOMAC);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlockExample.MY_BETTER_BLOCK);
+            event.accept(ModBlockExample.LAPIS_EMERALD_BLOCK);
+            event.accept(ModBlockExample.RUBY_BLOCK);
         }
     }
 

@@ -6,7 +6,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -15,17 +14,20 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.function.Supplier;
-
 public class ModBlockExample {
 
     //BLOCKS is a DeferredRegister.Blocks
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TutorialMod.MOD_ID);
 
-    // METEORITE block
-    public static final DeferredBlock<Block> MY_BETTER_BLOCK = BLOCKS.registerSimpleBlock("my_better_block", BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse("modpinho:my_better_block"))).strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE));
-    // METEORITE_BLOCK_ITEM block item
-    public static final DeferredItem<BlockItem> MY_BETTER_BLOCK_ITEM = ModItemExample.ITEMS.register("my_better_block", () -> new BlockItem(MY_BETTER_BLOCK.get(), new BlockItem.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse("modpinho:my_better_block")))));
+    // Lapis Emerald Block
+    public static final DeferredBlock<Block> LAPIS_EMERALD_BLOCK = BLOCKS.registerSimpleBlock("lapis_emerald_block", BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse("modpinho:lapis_emerald_block"))).strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE));
+    // Lapis Emerald Block item
+    public static final DeferredItem<BlockItem> LAPIS_EMERALD_ITEM = ModItemExample.ITEMS.register("lapis_emerald_block", () -> new BlockItem(LAPIS_EMERALD_BLOCK.get(), new BlockItem.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse("modpinho:lapis_emerald_block")))));
+
+    // Ruby Block
+    public static final DeferredBlock<Block> RUBY_BLOCK = BLOCKS.registerSimpleBlock("ruby_block", BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse("modpinho:ruby_block"))).strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE));
+    // Ruby Block item
+    public static final DeferredItem<BlockItem> RUBY_BLOCK_ITEM = ModItemExample.ITEMS.register("ruby_block_item", () -> new BlockItem(RUBY_BLOCK.get(), new BlockItem.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse("modpinho:ruby_block")))));
 
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
