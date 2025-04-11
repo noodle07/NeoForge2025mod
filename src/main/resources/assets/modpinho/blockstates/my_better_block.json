@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "modpinho:block/my_better_block"
+    }
+  }
+}

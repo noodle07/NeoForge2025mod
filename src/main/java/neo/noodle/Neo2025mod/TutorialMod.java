@@ -1,5 +1,6 @@
 package neo.noodle.Neo2025mod;
 
+import neo.noodle.Neo2025mod.block_example.ModBlockExample;
 import neo.noodle.Neo2025mod.item_example.ModItemExample;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -41,6 +42,7 @@ public class TutorialMod
         NeoForge.EVENT_BUS.register(this);
 
         ModItemExample.register(modEventBus);
+        ModBlockExample.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -59,6 +61,9 @@ public class TutorialMod
     {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItemExample.BATATADOMAC);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlockExample.MY_BETTER_BLOCK);
         }
     }
 
