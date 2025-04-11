@@ -22,7 +22,7 @@ public class ModBlockExample {
     // Lapis Emerald Block
     public static final DeferredBlock<Block> LAPIS_EMERALD_BLOCK = BLOCKS.registerSimpleBlock("lapis_emerald_block", BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse("modpinho:lapis_emerald_block"))).strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE));
     // Lapis Emerald Block item
-    public static final DeferredItem<BlockItem> LAPIS_EMERALD_ITEM = ModItemExample.ITEMS.register("lapis_emerald_block", () -> new BlockItem(LAPIS_EMERALD_BLOCK.get(), new BlockItem.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse("modpinho:lapis_emerald_block")))));
+    public static final DeferredItem<BlockItem> LAPIS_EMERALD_ITEM = ModItemExample.ITEMS.register("lapis_emerald_block_item", () -> new BlockItem(LAPIS_EMERALD_BLOCK.get(), new BlockItem.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse("modpinho:lapis_emerald_block")))));
 
     // Ruby Block
     public static final DeferredBlock<Block> RUBY_BLOCK = BLOCKS.registerSimpleBlock("ruby_block", BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.parse("modpinho:ruby_block"))).strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE));
